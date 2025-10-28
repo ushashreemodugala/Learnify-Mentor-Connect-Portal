@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>C++ Quiz</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Who is the creator of C++?</p>
+                <input type="radio" name="q1" value="0"> Dennis Ritchie<br>
+                <input type="radio" name="q1" value="1"> Bjarne Stroustrup<br>
+                <input type="radio" name="q1" value="0"> James Gosling<br>
+                <input type="radio" name="q1" value="0"> Guido van Rossum<br>
+            </div>
+
+            <div class="question">
+                <p>2. Which of the following is used to declare a constant in C++?</p>
+                <input type="radio" name="q2" value="1"> const<br>
+                <input type="radio" name="q2" value="0"> final<br>
+                <input type="radio" name="q2" value="0"> constant<br>
+                <input type="radio" name="q2" value="0"> static<br>
+            </div>
+
+            <div class="question">
+                <p>3. Which of the following is not a type of constructor in C++?</p>
+                <input type="radio" name="q3" value="0"> Default constructor<br>
+                <input type="radio" name="q3" value="0"> Copy constructor<br>
+                <input type="radio" name="q3" value="0"> Move constructor<br>
+                <input type="radio" name="q3" value="1"> Friend constructor<br>
+            </div>
+            <div class="question">
+                <p>4. What is the correct way to declare a variable in C++? </p>
+                <input type="radio" name="q4" value="0">'int 1x;'<br>
+                <input type="radio" name="q4" value="1">'int x=10;'<br>
+                <input type="radio" name="q4" value="0">'1x=10;'<br>
+                <input type="radio" name="q4" value="0">'1x=10;'<br>
+            </div>
+
+            <div class="question">
+                <p>5. How do you access the value of a pointer 'ptr'in C++?</p>
+                <input type="radio" name="q5" value="0">'&ptr'<br>
+                <input type="radio" name="q5" value="1">'*ptr'<br>
+                <input type="radio" name="q5" value="0">'ptr'<br>
+                <input type="radio" name="q5" value="0">'**ptr'<br>
+            </div>
+
+            <div class="question">
+                <p>6.What is the size of a 'bool'in C++? </p>
+                <input type="radio" name="q6" value="1">1 byte<br>
+                <input type="radio" name="q6" value="0">2 byte<br>
+                <input type="radio" name="q6" value="0">4 byte<br>
+                <input type="radio" name="q6" value="0">8 byte <br>
+            </div>
+
+            <button type="button" onclick="submitQuiz()">Submit</button><br><br>
+            <a href="cppvdo.html">click here to watch video</a>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

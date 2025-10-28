@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Signup Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        form:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        input:hover,
+        input:focus {
+            border-color: #3498db;
+        }
+
+        .btn {
+            background: #2ecc71;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #27ae60;
+        }
+
+        .member {
+            margin-top: 20px;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="signup(event)">
+        <h1>Sign Up</h1>
+        <div>
+            <input type="text" name="" id="firstname" placeholder="Firstname">
+        </div>
+        <div>
+            <input type="text" name="" id="lastname" placeholder="Lastname">
+        </div>
+        <div>
+            <input type="email" name="" id="Email" placeholder="Email">
+        </div>
+        <div>
+            <input type="password" name="" id="password" placeholder="Password">
+        </div>
+        <button id="signupbtn" class="btn">Sign Up</button>
+        <div class="member">
+            <a href="login.html">Login Here!</a>
+        </div>
+    </form>
+    <script src="app.js" type="module"></script>
+</body>
+    
+</html>
